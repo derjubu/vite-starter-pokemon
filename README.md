@@ -22,3 +22,5 @@
 
 - To start the development server, run `$ npm run dev`
 - For viewing/working on components, run `$ npm run storybook`
+- To run static and unit tests, run `$ npm test`
+- To run Jest in watch mode, run `$ npm run jest:watch`

@@ -1,8 +1,10 @@
 import Example from './Example'
 
 export default {
-  title: 'example/Example',
+  title: 'components/Example',
   component: Example,
 }
 
-export const Default = () => Example()
+export const ShortText = () => Example('Short text')
+export const LongText = () =>
+  Example('This is a very long text to show how the component behaves')

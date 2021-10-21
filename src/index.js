@@ -1,5 +1,7 @@
 import './styles/index.css'
 import { getBySelector } from './lib/dom.js'
+import Example from './components/Example'
 
-const appContainer = getBySelector('#app')
-appContainer.innerText = 'Vite Starter'
+const example = Example('Vite Starter')
+
+getBySelector('#app').append(example)
