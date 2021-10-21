@@ -1,9 +1,11 @@
 # Vite Starter
 
-- [Vite Starter](#vite-starter)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Development](#development)
+A boilerplate for JavaScript development with Vite.
+
+- [Features](#features)
+- [Installation](#installation)
+- [Development](#development)
+- [Recommended VSCode Extensions](#recommended-vscode-extensions)
 
 ## Features
 
@@ -24,3 +26,10 @@
 - For viewing/working on components, run `$ npm run storybook`
 - To run static and unit tests, run `$ npm test`
 - To run Jest in watch mode, run `$ npm run jest:watch`
+
+## Recommended VSCode Extensions
+
+This package contains a list of recommended extensions.
+
+To trigger the prompt for installation, press `cmd + shift + p` and search for
+`Extensions: Show Recommended Extensions`
