@@ -14,9 +14,17 @@
     "js:check": "npx eslint .",
     "format:check": "npx prettier --check .",
     "format:fix": "npx prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "7.15.8",
+    "@storybook/addon-actions": "6.3.12",
+    "@storybook/addon-essentials": "6.3.12",
+    "@storybook/addon-links": "6.3.12",
+    "@storybook/html": "6.3.12",
+    "babel-loader": "8.2.3",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.2",
@@ -27,6 +35,7 @@
     "lint-staged": "11.2.3",
     "npm-run-all": "4.1.5",
     "prettier": "2.4.1",
+    "storybook-builder-vite": "0.1.2",
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
     "stylelint-prettier": "1.2.0",
