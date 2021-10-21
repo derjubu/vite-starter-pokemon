@@ -1,11 +1,14 @@
 {
-  "name": "javascript-starter",
+  "name": "vite-starter",
   "private": "true",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "test": "run-p html:check css:check js:check format:check",
+    "test": "run-p jest html:check css:check js:check format:check",
     "build": "vite build",
     "serve": "vite preview",
+    "jest": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' npx jest",
+    "jest:watch": "npm run jest -- --watch",
     "html:check": "npx htmlhint *.html",
     "css:check": "npx stylelint ./src",
     "js:check": "npx eslint .",
@@ -33,5 +36,8 @@
     "*.js": "eslint --cache --fix",
     "*.css": "stylelint --fix",
     "*.{html,css,js,json,md}": "prettier --write"
+  },
+  "dependencies": {
+    "jest": "27.3.1"
   }
 }
