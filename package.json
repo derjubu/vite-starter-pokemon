@@ -4,8 +4,11 @@
   "scripts": {
     "dev": "vite",
     "test": "run-p html:check css:check js:check format:check",
+    "test:watch": "npm run jest:watch",
     "build": "vite build",
     "serve": "vite preview",
+    "jest": "npx jest",
+    "jest:watch": "npx jest --watch",
     "html:check": "npx htmlhint *.html",
     "css:check": "npx stylelint ./src",
     "js:check": "npx eslint .",
@@ -33,5 +36,8 @@
     "*.js": "eslint --cache --fix",
     "*.css": "stylelint --fix",
     "*.{html,css,js,json,md}": "prettier --write"
+  },
+  "dependencies": {
+    "jest": "27.3.1"
   }
 }
