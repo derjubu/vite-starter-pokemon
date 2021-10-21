@@ -1,6 +1,6 @@
-import './styles/index.css'
-import { getBySelector } from './lib/dom.js'
 import Example from './components/Example'
+import { getBySelector } from './lib/dom'
+import './styles/index.css'
 
 const example = Example('Vite Starter')
 
