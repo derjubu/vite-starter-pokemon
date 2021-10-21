@@ -1,10 +1,5 @@
-import Navigation from './components/Navigation'
-import './index.css'
+import './styles/index.css'
+import { getElement } from './lib/dom.js'
 
-const nav = Navigation(onNavigate)
-
-function onNavigate(page) {
-  console.log(page)
-}
-
-document.body.append(nav)
+const appContainer = getElement('#app')
+appContainer.innerText = 'Vite Starter'
