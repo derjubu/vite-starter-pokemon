@@ -1,5 +1,5 @@
 import './styles/index.css'
-import { getElement } from './lib/dom.js'
+import { getBySelector } from './lib/dom.js'
 
-const appContainer = getElement('#app')
+const appContainer = getBySelector('#app')
 appContainer.innerText = 'Vite Starter'
