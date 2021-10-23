@@ -24,6 +24,5 @@ function renderCards(data) {
     image: data.sprites.front_default,
     type: typePoke,
   })
-  data.types.forEach(entry => console.log(entry.type.name))
-  container.append(card)
+  ;(card.style.order = data.id), container.append(card)
 }
