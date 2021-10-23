@@ -11,8 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
-  box-shadow:
-    1.1px 0.8px 1.1px -7px rgba(0, 0, 0, 0.013),
+  box-shadow: 1.1px 0.8px 1.1px -7px rgba(0, 0, 0, 0.013),
     2.9px 2.2px 3.6px -7px rgba(0, 0, 0, 0.028),
     12px 9px 16px -7px rgba(0, 0, 0, 0.24);
 }
@@ -27,5 +26,5 @@
   text-transform: capitalize;
   font-size: 1.5rem;
   justify-self: center;
-  grid-column: 1 / span 2;
+  grid-column: 1 / -1;
 }
