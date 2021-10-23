@@ -5,4 +5,21 @@
   color: white;
   border: yellow 2px solid;
   border-radius: 4px;
+  list-style: none;
+  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  justify-items: left;
+}
+
+.cardImage {
+  max-width: 100%;
+  grid-column: 1 / 3;
+}
+
+.cardName {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  justify-self: center;
 }
