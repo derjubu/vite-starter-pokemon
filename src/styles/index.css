@@ -2,10 +2,9 @@
 
 .pokedex {
   padding: 0;
-  margin: 5px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  justify-items: center;
+  gap: 15px;
+  justify-content: center;
 }
