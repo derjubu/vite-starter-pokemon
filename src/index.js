@@ -2,7 +2,7 @@ import Card from './components/Card'
 import { getBySelector } from './lib/dom'
 import './styles/index.css'
 
-const url = 'https://pokeapi.co/api/v2/pokemon?limit=100'
+const url = 'https://pokeapi.co/api/v2/pokemon?limit=150'
 
 fetch(url)
   .then(res => res.json())
@@ -22,7 +22,10 @@ function renderCards(data) {
     name: data.name,
     id: data.id,
     image: data.sprites.front_default,
+    height: data.height,
+    weight: data.weight,
     type: typePoke,
+    hp: data.stats[0].base_stat,
   })
   ;(card.style.order = data.id), container.append(card)
 }
