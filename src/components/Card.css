@@ -1,6 +1,8 @@
-.Card {
+.card {
   font-weight: 500;
   background: steelblue;
   padding: 12px;
   color: white;
+  border: yellow 2px solid;
+  border-radius: 4px;
 }

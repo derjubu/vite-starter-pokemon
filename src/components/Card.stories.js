@@ -5,6 +5,11 @@ export default {
   component: Card,
 }
 
-export const ShortText = () => Card('Short text')
-export const LongText = () =>
-  Card('This is a very long text to show how the component behaves')
+export const ShortText = () =>
+  Card({
+    image:
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
+    name: 'Pikachu',
+    id: '8',
+    type: ['poison', 'water'],
+  })
