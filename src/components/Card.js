@@ -1,8 +1,9 @@
 import { createElement } from '../lib/dom.js'
 import './Card.css'
 import { getByDataJs } from '../lib/dom.js'
+import { fetchPokemon } from '../lib/api.js'
 
-export default function Card({
+export default async function Card({
   image,
   name,
   id,
@@ -12,9 +13,10 @@ export default function Card({
   weight,
   imageShiny,
 }) {
-  fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`).then(result =>
-    result.json().then(data => findPredecessor(data))
-  )
+  /*fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
+    .then(result => result.json())
+    .then(data => findPredecessor(data))*/
+  const data = await fetchPokemon(id)
 
   function findPredecessor(data) {
     if (data.evolves_from_species !== null) {
@@ -44,6 +46,7 @@ export default function Card({
   const imageShine = getByDataJs('imageShiny', el)
   const buttonShine = getByDataJs('buttonShiny', el)
   const buttonPredecessor = getByDataJs('buttonPredecessor', el)
+  findPredecessor(data)
   buttonShine.addEventListener('click', () => {
     imageRegular.classList.toggle('hidden')
     imageShine.classList.toggle('hidden')

@@ -14,9 +14,9 @@ fetch(url)
     })
   })
 
-function renderCards(data) {
+async function renderCards(data) {
   const container = getBySelector('#app')
-  const card = Card({
+  const card = await Card({
     name: data.name,
     id: data.id,
     image: data.sprites.front_default,
