@@ -1,7 +1,6 @@
-.card {
+.card--basic {
   font-weight: 500;
   background: steelblue;
-  height: 255px;
   padding: 12px;
   color: white;
   border: #bab709 4px solid;
@@ -24,4 +23,15 @@
   font-size: 1.5rem;
   justify-self: center;
   grid-column: 1 / -1;
+}
+
+.card-types {
+  grid-column: 1 / -1;
+}
+
+.card__button-shine {
+  border: yellow 2px solid;
+  border-radius: 5px;
+  color: black;
+  background-color: yellow;
 }
